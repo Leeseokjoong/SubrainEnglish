@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>수브레인 문법 퀴즈</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ✅ 공통 스타일(떠있는 메인버튼 포함) -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- 모듈 전용 스타일(있다면 유지) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* 드롭다운 메뉴 스타일 */
+    .menu{max-width:820px;margin:0 auto;padding:0 20px;text-align:center}
+    .set-row{margin-top:12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .select{
+      background:#1e293b;border:1px solid #334155;color:#e2e8f0;
+      border-radius:10px;padding:10px 12px;min-width:200px
+    }
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#334155;color:#e2e8f0;cursor:pointer}
+    .btn:hover{filter:brightness(1.08)}
+    .muted{color:#94a3b8;font-size:14px;margin-top:6px}
+    .divider{height:1px;background:#334155;opacity:.7;margin:16px auto;max-width:820px}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <h1>수브레인 문법 퀴즈 프로그램</h1>
+    <p class="subtitle">20문제 세트를 선택해서 푸세요</p>
+  </header>
+
+  <main id="quiz">
+    <!-- 메뉴판 -->
+    <div class="menu">
+      <div class="set-row">
+        <select id="set-select" class="select" aria-label="문제 세트 선택"></select>
+        <button id="load-set" class="btn">세트 불러오기</button>
+      </div>
+      <div id="set-status" class="muted">매니페스트를 읽는 중...</div>
+      <div class="divider"></div>
+    </div>
+
+    <!-- 시작 화면 -->
+    <div class="start-screen" style="text-align:center;margin-top:12px;">
+      <button id="start-btn" class="btn-green" disabled>🚀 퀴즈 시작</button>
+    </div>
+
+    <!-- 퀴즈 화면 -->
+    <div class="quiz-screen card" style="display:none;">
+      <div class="progress-wrapper">
+        <div id="progress-bar"><div id="progress-fill"></div></div>
+        <span id="progress-count">0/0</span>
+      </div>
+
+      <div id="stem">문제가 여기에 표시됩니다.</div>
+      <div class="choices"></div>
+      <div class="answer"></div>
+
+      <div class="actions">
+        <button id="next-btn" class="btn-blue">다음 ▶</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+
+  <!-- 항상 보이는 메인 버튼 -->
+  <a href="../index.html" class="floating-btn">← 메인으로</a>
+</body>
+</html>

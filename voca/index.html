@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>수브레인 영단어 학습 프로그램</title>
+
+  <!-- 공통 디자인 (팔레트, 메인 버튼 등) -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- ✅ voca 전용 스타일 (파일명이 styles.css 인지 꼭 확인) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="voca">
+  <header class="app-header">
+    <h1>수브레인 영단어 학습 프로그램</h1>
+    <p class="subtitle">세트를 선택하고 학습을 시작하세요.</p>
+  </header>
+
+  <main class="container">
+    <!-- Step1: 이름 입력 -->
+    <div id="step1" class="screen">
+      <div class="card">
+        <h2>이름 입력</h2>
+        <div class="field">
+          <span>이름</span>
+          <input id="studentName" type="text" placeholder="이름을 입력하세요" />
+        </div>
+        <button id="btnGoStep2">다음</button>
+      </div>
+    </div>
+
+    <!-- Step2: 세트 선택 -->
+    <div id="step2" class="screen">
+      <div class="card">
+        <h2>세트 선택</h2>
+        <select id="presetSelect"></select>
+        <div class="row">
+          <button id="btnUsePreset">사용하기</button>
+          <button id="btnStartStudy" disabled>학습 시작</button>
+        </div>
+        <p id="loadInfo" class="hint"></p>
+      </div>
+    </div>
+
+    <!-- Step3: 학습 화면 -->
+    <div id="step3" class="screen">
+      <div class="card big">
+        <div id="studyWord" class="word"></div>
+        <div id="studyMeaning" class="meaning"></div>
+
+        <!-- ASCII 전용 출력 영역 -->
+        <pre id="studyAscii" class="ascii" aria-label="ASCII illustration"></pre>
+
+        <!-- 단어 이미지 (선택) -->
+        <img id="studyImage" class="study-img" alt="단어 이미지" />
+
+        <div class="row between">
+          <span><span id="studyIndex"></span>/<span id="studyTotal"></span></span>
+          <button id="btnSpeak">🔊 발음</button>
+        </div>
+      </div>
+      <div class="row between">
+        <button id="btnPrev">이전</button>
+        <button id="btnNext">다음</button>
+      </div>
+      <hr/>
+      <button id="btnGoQuiz" class="btn success">퀴즈 시작</button>
+    </div>
+
+    <!-- Step4: 퀴즈 -->
+    <div id="step4" class="screen">
+      <div class="card big">
+        <div id="quizWord" class="quiz-word"></div>
+        <div id="choiceList" class="choices"></div>
+        <div class="row between">
+          <span><span id="quizIndex"></span>/<span id="quizTotal"></span></span>
+          <button id="btnNextQuiz">다음 문제</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step5: 결과 -->
+    <div id="step5" class="screen">
+      <div class="card big">
+        <h2>결과</h2>
+        <div class="stat-line">
+          <span>정답: <span id="statCorrect"></span></span>
+          <span>오답: <span id="statWrong"></span></span>
+          <span>정답률: <span id="statRate"></span></span>
+        </div>
+        <h3>오답 리스트</h3>
+        <div id="wrongListWrap" class="wrong-list"></div>
+      </div>
+      <div class="row">
+        <button id="btnRetryWrong" class="btn warning">오답 다시 풀기</button>
+        <button id="btnNextBatch" class="btn success">다음 묶음 학습</button>
+        <button id="btnExportCsv">CSV 내보내기</button>
+      </div>
+      <button id="btnBackHome" class="btn ghost">처음으로</button>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>© 2025 단어 학습 프로그램 v.01</p>
+  </footer>
+
+  <!-- 효과음 -->
+  <audio id="correctSound" src="./sounds/correct.mp3" preload="auto"></audio>
+  <audio id="wrongSound"   src="./sounds/wrong.mp3"   preload="auto"></audio>
+
+  <script src="./sounds.js"></script>
+  <script src="./app.js"></script>
+
+  <!-- ✅ 항상 보이는 메인으로 버튼 -->
+  <a href="../index.html" class="floating-btn">← 메인으로</a>
+</body>
+</html>
