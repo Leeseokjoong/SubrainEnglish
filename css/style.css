@@ -1,0 +1,85 @@
+:root{
+    /* Subrain core palette */
+    --bg:#0f172a;            /* 배경 다크 네이비 */
+    --panel:#0b1220;         /* 카드/패널 */
+    --text:#e5e7eb;          /* 기본 텍스트 */
+    --muted:#9ca3af;         /* 보조 텍스트 */
+    --accent1:#22c55e;       /* 포커스/링 */
+    --grad1:#0ea5e9;         /* 버튼/카드 그라데이션 A */
+    --grad2:#22d3ee;         /* 버튼/카드 그라데이션 B */
+    --radius:18px;
+    --shadow:0 12px 28px rgba(0,0,0,.35);
+    --ring:0 0 0 3px rgba(34,197,94,.4);
+  }
+  
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background: radial-gradient(1200px 800px at 10% -10%, #0b1530 0%, var(--bg) 60%);
+    color:var(--text); font-family:"Pretendard", system-ui, -apple-system, Segoe UI, Roboto, "Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  
+  .shell{
+    max-width:980px; margin:0 auto; padding:40px 20px;
+    display:flex; flex-direction:column; min-height:100dvh;
+  }
+  
+  .brand{
+    display:flex; align-items:center; gap:18px; margin-bottom:28px;
+  }
+  .logo{ width:72px; height:72px; object-fit:contain; filter:drop-shadow(0 6px 12px rgba(0,0,0,.45)); }
+  .titles h1{ margin:0; font-size:28px; font-weight:700; letter-spacing:.2px; }
+  .subtitle{ margin:.25rem 0 0; color:var(--muted); font-size:14px }
+  
+  .cards{
+    display:grid; gap:18px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width:920px){ .cards{ grid-template-columns: 1fr 1fr; } }
+  @media (max-width:620px){ .cards{ grid-template-columns: 1fr; } }
+  
+  .card{
+    appearance:none; border:0; cursor:pointer; text-align:left;
+    background: linear-gradient(135deg, rgba(14,165,233,.18), rgba(34,211,238,.12)) , var(--panel);
+    border-radius: var(--radius); padding:22px; box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    color:var(--text);
+  }
+  .card:hover{ transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,0,0,.45); }
+  .card:focus-visible{ outline:none; box-shadow: var(--shadow), var(--ring); }
+  
+  .card-icon{ font-size:28px; line-height:1; margin-bottom:10px }
+  .card-title{ font-size:20px; font-weight:700; margin-bottom:6px }
+  .card-desc{ margin:0; color:var(--muted); font-size:14px }
+  
+  /* 일관된 버튼 스타일이 필요한 경우 재사용 클래스 */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background: linear-gradient(135deg, var(--grad1), var(--grad2));
+    color:#04111f; font-weight:700; border:none; border-radius:14px;
+    padding:12px 18px; transition: transform .15s ease, opacity .2s ease;
+  }
+  .btn:hover{ transform: translateY(-2px); opacity:.95 }
+  .btn:focus-visible{ outline:none; box-shadow: var(--ring) }
+  
+  .foot{ margin-top:auto; padding-top:28px; color:var(--muted); text-align:center; font-size:12px; opacity:.9 }
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #22d3ee);
+    color: #04111f;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    z-index: 9999; /* 다른 요소보다 위에 표시 */
+  }
+  
+  .floating-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
