@@ -1,180 +1,22 @@
-{
-  "day": "day01",
-  "count": 20,
-  "items": [
-    {
-      "word": "hello",
-      "meaning": "안녕",
-      "ascii": [
-        " ( ^_^)ノ",
-        "  안녕~ "
-      ]
-    },
-    {
-      "word": "bye",
-      "meaning": "잘가",
-      "ascii": [
-        " (T_T)/~",
-        "  잘가~ "
-      ]
-    },
-    {
-      "word": "goodbye",
-      "meaning": "잘가요",
-      "ascii": [
-        " (ToT)/~~~",
-        "   안녕히 "
-      ]
-    },
-    {
-      "word": "I",
-      "meaning": "나",
-      "ascii": [
-        "  :) ",
-        "  나 "
-      ]
-    },
-    {
-      "word": "you",
-      "meaning": "너",
-      "ascii": [
-        "  →_→ ",
-        "   너  "
-      ]
-    },
-    {
-      "word": "what",
-      "meaning": "무엇",
-      "ascii": [
-        "  ??? ",
-        " (o_o) "
-      ]
-    },
-    {
-      "word": "who",
-      "meaning": "누구",
-      "ascii": [
-        " (•¿•) ",
-        "  누구? "
-      ]
-    },
-    {
-      "word": "name",
-      "meaning": "이름",
-      "ascii": [
-        " ┌───┐ ",
-        " │Tom│ ",
-        " └───┘ "
-      ]
-    },
-    {
-      "word": "my",
-      "meaning": "나의",
-      "ascii": [
-        " (♥‿♥) ",
-        "  내꺼  "
-      ]
-    },
-    {
-      "word": "your",
-      "meaning": "너의",
-      "ascii": [
-        " (¬‿¬) ",
-        "  너의  "
-      ]
-    },
-    {
-      "word": "this",
-      "meaning": "이것",
-      "ascii": [
-        "   ↓ ",
-        " [이것] "
-      ]
-    },
-    {
-      "word": "that",
-      "meaning": "저것",
-      "ascii": [
-        "   → ",
-        " [저것] "
-      ]
-    },
-    {
-      "word": "ball",
-      "meaning": "공",
-      "ascii": [
-        "  .---. ",
-        " /     \\",
-        "|       |",
-        " \\     /",
-        "  '---' "
-      ]
-    },
-    {
-      "word": "doll",
-      "meaning": "인형",
-      "ascii": [
-        " (•‿•) ",
-        " /|_|\\ ",
-        "  / \\  "
-      ]
-    },
-    {
-      "word": "book",
-      "meaning": "책",
-      "ascii": [
-        " .----. ",
-        " |BOOK| ",
-        " '----' "
-      ]
-    },
-    {
-      "word": "clock",
-      "meaning": "시계",
-      "ascii": [
-        "  ____  ",
-        " |12  | ",
-        " |  o  | ",
-        " |  6  | ",
-        " '----' "
-      ]
-    },
-    {
-      "word": "cup",
-      "meaning": "컵",
-      "ascii": [
-        "   ___  ",
-        "  (   ) ",
-        "   |_|  "
-      ]
-    },
-    {
-      "word": "cap",
-      "meaning": "모자",
-      "ascii": [
-        "  _____ ",
-        " /     \\",
-        "|       |"
-      ]
-    },
-    {
-      "word": "robot",
-      "meaning": "로봇",
-      "ascii": [
-        " [o_o] ",
-        " /|_|\\ ",
-        "  / \\  "
-      ]
-    },
-    {
-      "word": "jump rope",
-      "meaning": "줄넘기",
-      "ascii": [
-        "   O   ",
-        "  /|\\  ",
-        "  / \\  ",
-        " -- -- "
-      ]
-    }
-  ]
-}
+[
+  { "word": "hello", "meaning": "안녕", "ascii": [" ( ^_^)ノ", "  안녕~ "] },
+  { "word": "bye", "meaning": "잘가", "ascii": [" (T_T)/~", "  잘가~ "] },
+  { "word": "goodbye", "meaning": "잘가요", "ascii": [" (ToT)/~~~", "   안녕히 "] },
+  { "word": "I", "meaning": "나", "ascii": ["  :) ", "  나 "] },
+  { "word": "you", "meaning": "너", "ascii": ["  →_→ ", "   너  "] },
+  { "word": "what", "meaning": "무엇", "ascii": ["  ??? ", " (o_o) "] },
+  { "word": "who", "meaning": "누구", "ascii": [" (•¿•) ", "  누구? "] },
+  { "word": "name", "meaning": "이름", "ascii": [" ┌───┐ ", " │Tom│ ", " └───┘ "] },
+  { "word": "my", "meaning": "나의", "ascii": [" (♥‿♥) ", "  내꺼  "] },
+  { "word": "your", "meaning": "너의", "ascii": [" (¬‿¬) ", "  너의  "] },
+  { "word": "this", "meaning": "이것", "ascii": ["   ↓ ", " [이것] "] },
+  { "word": "that", "meaning": "저것", "ascii": ["   → ", " [저것] "] },
+  { "word": "ball", "meaning": "공", "ascii": ["  .---. ", " /     \\", "|       |", " \\     /", "  '---' "] },
+  { "word": "doll", "meaning": "인형", "ascii": [" (•‿•) ", " /|_|\\ ", "  / \\  "] },
+  { "word": "book", "meaning": "책", "ascii": [" .----. ", " |BOOK| ", " '----' "] },
+  { "word": "clock", "meaning": "시계", "ascii": ["  ____  ", " |12  | ", " |  o  | ", " |  6  | ", " '----' "] },
+  { "word": "cup", "meaning": "컵", "ascii": ["   ___  ", "  (   ) ", "   |_|  "] },
+  { "word": "cap", "meaning": "모자", "ascii": ["  _____ ", " /     \\", "|       |"] },
+  { "word": "robot", "meaning": "로봇", "ascii": [" [o_o] ", " /|_|\\ ", "  / \\  "] },
+  { "word": "jump rope", "meaning": "줄넘기", "ascii": ["   O   ", "  /|\\  ", "  / \\  ", " -- -- "] }
+]
