@@ -1,12 +1,17 @@
 [
-  { "word": "run", "meaning": "달리다", "ascii": ["  o/", " /| ", " / \\"] },
-  { "word": "jump", "meaning": "점프하다", "ascii": ["   o", "  /|\\", "   | ", "  / \\"] },
-  { "word": "swim", "meaning": "수영하다", "ascii": [" ~o~", " /| ", " / \\"] },
-  { "word": "read", "meaning": "읽다", "ascii": [" (BOOK)", "  (•‿•)"] },
-  { "word": "write", "meaning": "쓰다", "ascii": [" ✎", " | |"] },
-  { "word": "sing", "meaning": "노래하다", "ascii": [" (•♪)", "  /|\\", "  / \\"] },
-  { "word": "dance", "meaning": "춤추다", "ascii": [" \\o/", "  | ", " / \\"] },
-  { "word": "play", "meaning": "놀다", "ascii": [" \\o/", "  | ", " / \\"] },
-  { "word": "eat", "meaning": "먹다", "ascii": [" ( • ᴥ •)", "   (🍎)"] },
-  { "word": "sleep", "meaning": "자다", "ascii": ["  zZZ", " ( -_-)"] }
+  { "word": "basketball", "meaning": "농구", "ascii": [" 🏀 ", " BASKET "] },
+  { "word": "badminton", "meaning": "배드민턴", "ascii": [" 🏸 ", " BADMINTON "] },
+  { "word": "soccer", "meaning": "축구", "ascii": [" ⚽ ", " SOCCER "] },
+  { "word": "tennis", "meaning": "테니스", "ascii": [" 🎾 ", " TENNIS "] },
+  { "word": "golf", "meaning": "골프", "ascii": [" ⛳ ", " GOLF "] },
+  { "word": "play", "meaning": "놀다, 하다", "ascii": ["  (•‿•)つ🎮 ", " PLAY "] },
+  { "word": "catch", "meaning": "잡다", "ascii": ["  (•_•)つ⚾ ", " CATCH "] },
+  { "word": "together", "meaning": "함께", "ascii": [" (•‿•)人(•‿•) ", " TOGETHER "] },
+  { "word": "go outside", "meaning": "밖에 나가다", "ascii": [" 🚪→🌳 ", " OUTSIDE "] },
+  { "word": "surprise", "meaning": "놀라다, 깜짝 선물", "ascii": ["  (⊙_☉)‼ ", " SURPRISE "] },
+  { "word": "birthday", "meaning": "생일", "ascii": ["  🎂 ", " BIRTHDAY "] },
+  { "word": "party", "meaning": "파티", "ascii": ["  🎉 ", " PARTY "] },
+  { "word": "gift", "meaning": "선물", "ascii": ["  🎁 ", " GIFT "] },
+  { "word": "present", "meaning": "선물", "ascii": ["  🎁 ", " PRESENT "] },
+  { "word": "toy", "meaning": "장난감", "ascii": ["  🧸 ", " TOY "] }
 ]
