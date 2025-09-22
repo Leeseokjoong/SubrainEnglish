@@ -23,7 +23,7 @@
       "id": 83,
       "stem": "He ___ not watch TV yesterday.",
       "choices": ["do", "does", "did", "did not"],
-      "answer": 3,
+      "answer": 2,
       "grade": "중1",
       "explain_short": "과거 부정문: did not + 동사원형.",
       "explain_long": "일반동사의 과거 부정문은 did not + 동사원형으로 만든다.",
